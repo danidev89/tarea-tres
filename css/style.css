@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-width: 100vh;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  background-color: #102b44;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "inicio inicio inicio autor autor autor autor autor"
+    "menu menu menu menu menu menu menu menu"
+    "ads-izquierda imagen-uno imagen-dos uno dos dos dos ads-derecho"
+    "ads-izquierda imagen-uno imagen-dos uno tres cuatro cuatro ads-derecho"
+    "ads-izquierda imagen-tres imagen-cuatro uno tres cinco seis ads-derecho"
+    "ads-izquierda imagen-tres imagen-cuatro uno tres cinco seis ads-derecho"
+    "ads-izquierda derechos derechos derechos derechos derechos derechos ads-derecho";
+  gap: 10px;
+  background-color: #0d5476;
+  margin-top: 100px;
+  padding: 10px;
+}
+.inicio {
+  grid-area: inicio;
+  background-color: #00ffff;
+}
+.autor {
+  grid-area: autor;
+  background-color: #0efff9;
+}
+.menu {
+  grid-area: menu;
+  background-color: #0efff9;
+}
+.ads-izquierdo {
+  grid-area: ads-izquierda;
+  background-color: #0efff9;
+}
+.ads-derecho {
+  grid-area: ads-derecho;
+  background-color: #0efff9;
+}
+.imagen-uno {
+  grid-area: imagen-uno;
+  background-color: #0efff9;
+}
+
+.imagen-dos {
+  grid-area: imagen-dos;
+  background-color: #0efff9;
+}
+.imagen-tres {
+  grid-area: imagen-tres;
+  background-color: #0efff9;
+}
+.imagen-cuatro {
+  grid-area: imagen-cuatro;
+  background-color: #0efff9;
+}
+.uno {
+  grid-area: uno;
+  background-color: #0efff9;
+}
+.dos {
+  grid-area: dos;
+  background-color: #0efff9;
+}
+.tres {
+  grid-area: tres;
+  background-color: #0efff9;
+}
+.cuatro {
+  grid-area: cuatro;
+  background-color: #0efff9;
+}
+.cinco {
+  grid-area: cinco;
+  background-color: #0efff9;
+}
+.seis {
+  grid-area: seis;
+  background-color: #0efff9;
+}
+.derechos {
+  grid-area: derechos;
+  background-color: #0efff9;
+}
+
+.texto-centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #0efff9;
+  font-weight: 800;
+  margin-top: 50px;
+  text-align: center;
+}
