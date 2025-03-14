@@ -18,7 +18,7 @@ body {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
-    "inicio inicio inicio autor autor autor autor autor"
+    "inicio inicio inicio inicio autor autor autor autor"
     "menu menu menu menu menu menu menu menu"
     "ads-izquierda imagen-uno imagen-dos uno dos dos dos ads-derecho"
     "ads-izquierda imagen-uno imagen-dos uno tres cuatro cuatro ads-derecho"
